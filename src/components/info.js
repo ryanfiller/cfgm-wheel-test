@@ -4,16 +4,16 @@ import { dates } from '../data'
 const Info = (props) => {
 
 	const {
-		title,
-		text,
-		color,
+		steps,
 		next,
 		prev,
 		current
 	} = props
 
-	const startDate = dates[current]
-	const endDate = dates[current + 1]
+	const {title, text, color} = steps[current]
+
+	const startDate = dates[steps[current].start]
+	const endDate = current + 1 < steps.length ? dates[steps[current + 1].start] : dates[steps[0].start]
 
 	return (
 		<section className="info" style={{backgroundColor: color}}>
