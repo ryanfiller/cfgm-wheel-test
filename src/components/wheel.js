@@ -7,26 +7,33 @@ const Group = (props) => {
     const {
         start,
         end, 
-        color
+        color,
+        isCurrent
     } = props
 
-    console.log(props)
-
     const arcs = [];
+
+    const pushArc = (i) => {
+        arcs.push(React.cloneElement(paths[i], {
+            key: i, 
+            className: isCurrent ? 'current' : null,
+            style: {stroke: color}
+        }))
+    }
     
     for (let i = start; i < end; i++) {
-        arcs.push(React.cloneElement(paths[i], {key: i, style: {stroke: color}}))
+        pushArc(i)
     }
 
     // deal with rollover in loop
     if (end < start) {
         for (let i = start; i < dates.length; i++) {
-            arcs.push(React.cloneElement(paths[i], {key: i, style: {stroke: color}}))
+            pushArc(i)
         }
 
         if (end > 0) {
             for (let i = 0; i < end; i++) {
-                arcs.push(React.cloneElement(paths[i], {key: i, style: {stroke: color}}))
+                pushArc(i)
             }
         }
     }
@@ -40,7 +47,10 @@ const Group = (props) => {
 
 const Wheel = (props) => {
 
-    const { steps } = props
+    const { 
+        steps,
+        current
+    } = props
 
     return (
         <div className="wheel">
@@ -48,6 +58,7 @@ const Wheel = (props) => {
                 {steps.map( (step, index) => {
                     return (
                         <Group 
+                            isCurrent={current === index ? true : false}
                             start={step.start} 
                             end={index + 1 < steps.length ? steps[index + 1].start : steps[0].start}
                             color={step.color}

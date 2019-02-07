@@ -29,7 +29,7 @@ export const steps = [
     {
         title: 'Step 1',
         text: 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur.',
-        start: 1,
+        start: 2,
         color: 'blue'
     },
     {
@@ -43,5 +43,11 @@ export const steps = [
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         start: 6,
         color: 'lightblue'
+    },
+    {
+        title: 'Step 4',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        start: 19,
+        color: 'green'
     }
 ]
