@@ -6,7 +6,7 @@ import { steps } from '../data.js'
 import Info from './info'
 import Wheel from './wheel'
 
-const App = (props) => {
+const App = () => {
 
 	const [current, setCurrent] = useState(0)
 
@@ -29,7 +29,7 @@ const App = (props) => {
 	return (
 		<section className="container">
 			<Info {...steps[current]} next={next} prev={prev} />
-			<Wheel steps={steps} current={current} />
+			<Wheel steps={steps} current={current} setCurrent={setCurrent} />
 		</section>
 	)
 }
