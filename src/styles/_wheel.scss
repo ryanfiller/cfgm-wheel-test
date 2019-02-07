@@ -1,6 +1,6 @@
 .wheel {
-    height: 50vw;
-    width: 50vw;
+    height: 100vw;
+    width: 100vw;
 
     svg {
         height: 100%;
@@ -9,14 +9,14 @@
         
         path {
             fill: none;
-            stroke-width: 5px;
+            stroke-width: 10px;
             transition: .2s;
         }
 
-        @for $i from 1 through 24 {
-            path:nth-child(#{$i}) {
-                stroke: darken(lightblue, 0% + ($i * 3));
-            }
-        }
+        // @for $i from 1 through 24 {
+        //     path:nth-child(#{$i}) {
+        //         stroke: darken(lightblue, 0% + ($i * 3));
+        //     }
+        // }
     }
 }
