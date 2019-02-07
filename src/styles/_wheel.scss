@@ -26,5 +26,26 @@
                 stroke-width: 6rem;
             }
         }
+
+        .months {
+            g {
+                path {
+                    fill: transparent;
+                    stroke-width: 3em;
+                }
+
+                text {
+                    font-size: 1rem;
+                }
+
+                &:nth-child(even) path {
+                    stroke: lightgray;
+                }
+
+                &:nth-child(odd) path {
+                    stroke: silver;
+                }
+            }
+        }
     }
 }

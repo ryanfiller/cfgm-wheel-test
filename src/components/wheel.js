@@ -1,4 +1,6 @@
 import React from 'react'
+import Months from './months'
+
 import { paths } from './paths'
 import { dates } from '../data'
 
@@ -70,6 +72,7 @@ const Wheel = (props) => {
                     )
                 })}
                 <circle className="mask" cx="200" cy="200" r="200"/>
+                <Months />
             </svg>
 		</div>
     )

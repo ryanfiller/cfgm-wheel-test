@@ -2,6 +2,9 @@
 <!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+</style>
 <path d="M251.7,6.7C235.2,2.3,217.8,0,200,0"/>
 <path d="M299.8,26.6c-15-8.6-31.1-15.4-48.2-19.9"/>
 <path d="M341.2,58.4c-12.3-12.2-26.2-23-41.4-31.7"/>
@@ -26,5 +29,55 @@
 <path d="M100.2,26.6C85,35.4,71.2,46,58.8,58.4"/>
 <path d="M148.3,6.7c-17,4.6-33.2,11.3-48.2,19.9"/>
 <path d="M200,0c-17.8,0-35.2,2.3-51.7,6.7"/>
-<circle cx="200" cy="199.6" r="0"/>
+<circle cx="200" cy="200" r="40.2"/>
+<g>
+	<path id="SVGID_x5F_1_x5F_" class="st0" d="M329.6,124.5c12.8,22,20.2,47.6,20.4,74.8"/>
+	<text>	<textPath  xlink:href="#SVGID_x5F_1_x5F_" startOffset="0%">
+<tspan  style="font-family:'MyriadPro-Regular'; font-size:18px;">Mar</tspan>	</textPath>
+</text>
+	<path id="SVGID_x5F_2_x5F_" class="st0" d="M350,199.3c0,0.2,0,0.4,0,0.7c0,27.1-7.2,52.6-19.8,74.5"/>
+	<text>	<textPath  xlink:href="#SVGID_x5F_2_x5F_" startOffset="0%">
+<tspan  style="font-family:'MyriadPro-Regular'; font-size:18px;">Apr</tspan>	</textPath>
+</text>
+	<path id="SVGID_x5F_3_x5F_" class="st0" d="M70.4,124.5c13.2-22.6,32.2-41.5,54.9-54.6"/>
+	<text>	<textPath  xlink:href="#SVGID_x5F_3_x5F_" startOffset="0%">
+<tspan  style="font-family:'MyriadPro-Regular'; font-size:18px;">Nov</tspan>	</textPath>
+</text>
+	<path id="SVGID_x5F_4_x5F_" class="st0" d="M274.7,69.9c22.7,13.1,41.7,31.9,54.9,54.6"/>
+	<text>	<textPath  xlink:href="#SVGID_x5F_4_x5F_" startOffset="0%">
+<tspan  style="font-family:'MyriadPro-Regular'; font-size:18px;">Feb</tspan>	</textPath>
+</text>
+	<path id="SVGID_x5F_5_x5F_" class="st0" d="M124.7,329.8c-22.8-13.3-41.8-32.4-54.9-55.2"/>
+	<text>	<textPath  xlink:href="#SVGID_x5F_5_x5F_" startOffset="0%">
+<tspan  style="font-family:'MyriadPro-Regular'; font-size:18px;">Aug</tspan>	</textPath>
+</text>
+	<path id="SVGID_x5F_6_x5F_" class="st0" d="M200,350c-27.4,0-53.2-7.4-75.3-20.2"/>
+	<text>	<textPath  xlink:href="#SVGID_x5F_6_x5F_" startOffset="0%">
+<tspan  style="font-family:'MyriadPro-Regular'; font-size:18px;">Jul</tspan>	</textPath>
+</text>
+	<path id="SVGID_x5F_7_x5F_" class="st0" d="M330.2,274.5c-13.1,22.9-32.1,42-54.9,55.2"/>
+	<text>	<textPath  xlink:href="#SVGID_x5F_7_x5F_" startOffset="0%">
+<tspan  style="font-family:'MyriadPro-Regular'; font-size:18px;">May</tspan>	</textPath>
+</text>
+	<path id="SVGID_x5F_8_x5F_" class="st0" d="M275.3,329.8C253.2,342.6,227.4,350,200,350"/>
+	<text>	<textPath  xlink:href="#SVGID_x5F_8_x5F_" startOffset="2.441406e-02%">
+<tspan  style="font-family:'MyriadPro-Regular'; font-size:18px;">Jun</tspan>	</textPath>
+</text>
+	<path id="SVGID_x5F_9_x5F_" class="st0" d="M69.8,274.5C57.2,252.6,50,227.1,50,200c0-0.2,0-0.4,0-0.7"/>
+	<text>	<textPath  xlink:href="#SVGID_x5F_9_x5F_" startOffset="1.220703e-02%">
+<tspan  style="font-family:'MyriadPro-Regular'; font-size:18px;">Sep</tspan>	</textPath>
+</text>
+	<path id="SVGID_x5F_10_x5F_" class="st0" d="M200,50c27.2,0,52.7,7.2,74.7,19.9"/>
+	<text>	<textPath  xlink:href="#SVGID_x5F_10_x5F_" startOffset="0%">
+<tspan  style="font-family:'MyriadPro-Regular'; font-size:18px;">Jan</tspan>	</textPath>
+</text>
+	<path id="SVGID_x5F_11_x5F_" class="st0" d="M125.3,69.9C147.3,57.2,172.8,50,200,50"/>
+	<text>	<textPath  xlink:href="#SVGID_x5F_11_x5F_" startOffset="0%">
+<tspan  style="font-family:'MyriadPro-Regular'; font-size:18px;">Dec</tspan>	</textPath>
+</text>
+	<path id="SVGID_x5F_12_x5F_" class="st0" d="M50,199.3c0.1-27.3,7.5-52.8,20.4-74.8"/>
+	<text>	<textPath  xlink:href="#SVGID_x5F_12_x5F_" startOffset="0%">
+<tspan  style="font-family:'MyriadPro-Regular'; font-size:18px;">Oct</tspan>	</textPath>
+</text>
+</g>
 </svg>
