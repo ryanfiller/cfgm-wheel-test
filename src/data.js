@@ -45,9 +45,21 @@ export const steps = [
         color: 'lightblue'
     },
     {
+        title: 'Step between 3 and 4',
+        text: 'no.',
+        start: 12,
+        color: 'purple'
+    },
+    {
         title: 'Step 4',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        start: 19,
+        start: 15,
         color: 'green'
+    },
+    {
+        title: 'Step 5',
+        text: 'Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.',
+        start: 19,
+        color: 'red'
     }
 ]

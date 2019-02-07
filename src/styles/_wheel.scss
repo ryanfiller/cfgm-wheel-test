@@ -1,5 +1,5 @@
 .wheel {
-    padding: 3rem;
+    padding: 4rem;
 
     svg {
         height: 100%;
@@ -12,7 +12,7 @@
         
         path.range {
             fill: none;
-            stroke-width: 2rem;
+            stroke-width: 4rem;
             transition: .2s;
             stroke-linecap: round;
             cursor: pointer;
@@ -23,7 +23,7 @@
             }
 
             &.current {
-                stroke-width: 4rem;
+                stroke-width: 6rem;
             }
         }
     }
