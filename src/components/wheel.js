@@ -10,8 +10,8 @@ const Group = (props) => {
         start,
         end, 
         color,
-        isCurrent,
-        onClick
+        onClick,
+        className
     } = props
 
     const arcs = [];
@@ -19,7 +19,6 @@ const Group = (props) => {
     const pushArc = (i) => {
         arcs.push(React.cloneElement(paths[i], {
             key: i, 
-            className: isCurrent ? 'range current' : 'range',
             style: {stroke: color}
         }))
     }
@@ -42,7 +41,7 @@ const Group = (props) => {
     }
 
     return (
-        <g className={'test'} onClick={onClick}>
+        <g className={className} onClick={onClick}>
             {arcs}
         </g>
     )
@@ -62,12 +61,12 @@ const Wheel = (props) => {
                 {steps.map( (step, index) => {
                     return (
                         <Group 
-                            isCurrent={current === index ? true : false}
                             start={step.start} 
                             end={index + 1 < steps.length ? steps[index + 1].start : steps[0].start}
                             color={step.color}
                             key={index}
-                            onClick={() => setCurrent(index)} 
+                            onClick={() => setCurrent(index)}
+                            className={ current === index ? 'range current' : 'range'}
                         />
                     )
                 })}

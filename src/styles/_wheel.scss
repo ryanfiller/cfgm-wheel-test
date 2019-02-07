@@ -9,23 +9,30 @@
         circle.mask {
             fill: white;
         }
-        
-        path.range {
-            fill: none;
-            stroke-width: 4rem;
-            transition: .2s;
-            stroke-linecap: round;
-            cursor: pointer;
 
-            &:first-child,
-            &:last-child, {
-                stroke-linecap: butt;
+        g.range {
+            path {
+                fill: none;
+                stroke-width: 4rem;
+                transition: .2s;
+                stroke-linecap: round;
+                cursor: pointer;
+    
+                &:first-child,
+                &:last-child, {
+                    stroke-linecap: butt;
+                }
             }
 
-            &.current {
+            &:hover path {
+                stroke-width: 5rem;
+            }
+
+            &.current path {
                 stroke-width: 6rem;
             }
         }
+        
 
         .months {
             g {
