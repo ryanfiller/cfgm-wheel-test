@@ -5,8 +5,11 @@ const Info = (props) => {
 	const {
 		title,
 		text,
-		color
+		color,
+		next,
+		prev
 	} = props
+
 
 	return (
 		<section className="info" style={{backgroundColor: color}}>
@@ -16,6 +19,12 @@ const Info = (props) => {
 			<p>
 				{text}
 			</p>
+			<button onClick={prev}>
+				Previous
+			</button>
+			<button onClick={next}>
+				Next
+			</button>
 		</section>
 	)
 }
