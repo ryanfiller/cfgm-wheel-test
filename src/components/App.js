@@ -28,7 +28,7 @@ const App = () => {
 
 	return (
 		<section className="container">
-			<Info {...steps[current]} next={next} prev={prev} />
+			<Info {...steps[current]} current={current} next={next} prev={prev} />
 			<Wheel steps={steps} current={current} setCurrent={setCurrent} />
 		</section>
 	)
