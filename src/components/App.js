@@ -18,8 +18,6 @@ const App = (props) => {
 	const [current, setCurrent] = useState(0)
 	const [rotation, setRotation] = useState(-1 * (arc * steps[0].middle) + arcOffset)
 
-	console.log(current)
-
 	const setNext = () => {
 		if(current + 1 <= steps.length - 1) {
 			setCurrent(current + 1)
@@ -40,6 +38,8 @@ const App = (props) => {
 		}
 	}
 
+	// TODO this spins out of controll if rotation is greater than 360
+	// it would be nice if this only spun forward too
 	const setThis = (index) => {
 		setCurrent(index)
 		setRotation(-1 * (arc * (steps[index].start + steps[index].middle)) + arcOffset)
