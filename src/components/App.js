@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../styles/styles.scss'
 
 import { paths } from './paths'
@@ -18,13 +18,15 @@ const App = (props) => {
 	const [current, setCurrent] = useState(0)
 	const [rotation, setRotation] = useState(-1 * (arc * steps[0].middle) + arcOffset)
 
+	console.log(current)
+
 	const setNext = () => {
 		if(current + 1 <= steps.length - 1) {
 			setCurrent(current + 1)
 			setRotation(rotation - (arc * (steps[current].middle + steps[current + 1].middle)))
 		} else {
 			setCurrent(0)
-			setRotation(rotation - (arc * (steps[steps.length - 1].middle + steps[1].middle)))
+			setRotation(rotation - (arc * (steps[steps.length - 1].middle + steps[0].middle)))
 		}
 	}
 
@@ -34,7 +36,7 @@ const App = (props) => {
 			setRotation(rotation + (arc * (steps[current].middle + steps[current - 1].middle)))
 		} else {
 			setCurrent(steps.length - 1)
-			setRotation(rotation + (arc * (steps[current].middle + steps[0].middle)))
+			setRotation(rotation + (arc * (steps[current].middle + steps[steps.length - 1].middle)))
 		}
 	}
 
@@ -42,6 +44,24 @@ const App = (props) => {
 		setCurrent(index)
 		setRotation(-1 * (arc * (steps[index].start + steps[index].middle)) + arcOffset)
 	}
+
+	useEffect(() => {
+        const keyListen = (e) => {
+			if (e.keyCode === 39) { // right
+				setNext()
+			}
+
+			if (e.keyCode === 37) { // left
+				setPrev()
+			}
+		}
+
+        document.addEventListener('keydown', keyListen)
+
+        return () => {
+          document.removeEventListener('keydown', keyListen)
+        }
+	})
 
 	return (
 		<section className="container">
