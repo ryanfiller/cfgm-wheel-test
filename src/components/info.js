@@ -6,26 +6,11 @@ const Info = (props) => {
 	const {
 		steps,
 		current,
-		setCurrent
+		setNext,
+		setPrev,
 	} = props
 
 	const {title, text, color} = steps[current]
-
-	const next = () => {
-		if(current + 1 <= steps.length - 1) {
-			setCurrent(current + 1)
-		} else {
-			setCurrent(0)
-		}
-	}
-
-	const prev = () => {
-		if(current - 1 >= 0) {
-			setCurrent(current - 1)
-		} else {
-			setCurrent(steps.length - 1)
-		}
-	}
 
 	const startDate = dates[steps[current].start]
 	const endDate = dates[steps[current].end]
@@ -40,10 +25,10 @@ const Info = (props) => {
 			<p>
 				{text}
 			</p>
-			<button onClick={prev}>
+			<button onClick={setPrev}>
 				Previous
 			</button>
-			<button onClick={next}>
+			<button onClick={setNext}>
 				Next
 			</button>
 		</section>

@@ -2,7 +2,7 @@ export const steps = [
     {
         title: 'Step 1',
         text: 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur.',
-        start: 1,
+        start: 0,
         color: 'blue'
     },
     {

@@ -52,7 +52,7 @@ const Wheel = (props) => {
     const { 
         steps,
         current,
-        setCurrent
+        setThis
     } = props
 
     return (
@@ -65,7 +65,7 @@ const Wheel = (props) => {
                             end={step.end}
                             color={step.color}
                             key={index}
-                            onClick={() => setCurrent(index)}
+                            onClick={() => setThis(index)}
                             className={ current === index ? 'range current' : 'range'}
                         />
                     )

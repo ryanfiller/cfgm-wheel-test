@@ -11,7 +11,7 @@ const formatData = (data) => {
             result[index].span = (result[index].end - result[index].start) > 0 ? 
                 result[index].end - result[index].start : 
                 (result[index].end - result[index].start) + paths.length,
-            result[index].middle = result[index].end - (result[index].span / 2)
+            result[index].middle = result[index].span / 2
         );
     })
  
