@@ -5,15 +5,23 @@ const Rotator = (props) => {
 
 	const {
 		children,
-		current
+        current,
+        steps
     } = props
 
-    const initial = 0;
+    console.log('steps[current].title', steps[current].title)
+    console.log('steps[current].span', steps[current].span)
+    console.log('steps[current].start', steps[current].start)
+    console.log('steps[current].middle', steps[current].middle)
+    console.log('steps[current].end', steps[current].end)
+
+    const initial = 45
+    const arc = 360 / paths.length
     
-    const rotation = initial;
+    const rotation = initial + (-1 * (arc * steps[current].middle))
 
 	return (
-        <div style={{transform: `rotate(${rotation}deg)`}}>
+        <div className="rotator" style={{transform: `rotate(${rotation}deg)`}}>
             {children}
         </div>
 	)

@@ -2,6 +2,7 @@
     padding: 1rem;
     color: white;
     position: relative;
+    transition: .2s;
 
     .arrow {
         height: 0;
@@ -12,6 +13,7 @@
         border-top: 1rem solid transparent;
         border-bottom: 1rem solid transparent;
         border-right: 5vw solid currentColor;
-        transform: skewY(150deg)
+        transform: skewY(150deg);
+        transition: .2s;
     }
 }
