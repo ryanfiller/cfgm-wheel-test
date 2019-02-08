@@ -40,7 +40,7 @@ const App = (props) => {
 
 	const setThis = (index) => {
 		setCurrent(index)
-		setRotation(-1 * (arc * steps[index].middle) + arcOffset)
+		setRotation(-1 * (arc * (steps[index].start + steps[index].middle)) + arcOffset)
 	}
 
 	return (
