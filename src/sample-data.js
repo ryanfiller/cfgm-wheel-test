@@ -3,7 +3,7 @@ export const steps = [
         title: 'Step 1',
         text: 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur.',
         start: 0,
-        color: 'blue'
+        color: 'lawngreen'
     },
     {
         title: 'Step 2',
@@ -15,7 +15,7 @@ export const steps = [
         title: 'Step 3',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         start: 7,
-        color: 'lightblue'
+        color: 'aqua'
     },
     {
         title: 'Step between 3 and 4',
@@ -27,12 +27,12 @@ export const steps = [
         title: 'Step 4',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         start: 15,
-        color: 'green'
+        color: 'blue'
     },
     {
         title: 'Step 5',
         text: 'Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.',
         start: 19,
-        color: 'red'
+        color: 'maroon'
     }
 ]
