@@ -1,19 +1,34 @@
 import React from 'react'
-import { dates } from '../data'
+import { dates } from '../dates'
 
 const Info = (props) => {
 
 	const {
 		steps,
-		next,
-		prev,
-		current
+		current,
+		setCurrent
 	} = props
 
 	const {title, text, color} = steps[current]
 
+	const next = () => {
+		if(current + 1 <= steps.length - 1) {
+			setCurrent(current + 1)
+		} else {
+			setCurrent(0)
+		}
+	}
+
+	const prev = () => {
+		if(current - 1 >= 0) {
+			setCurrent(current - 1)
+		} else {
+			setCurrent(steps.length - 1)
+		}
+	}
+
 	const startDate = dates[steps[current].start]
-	const endDate = current + 1 < steps.length ? dates[steps[current + 1].start] : dates[steps[0].start]
+	const endDate = dates[steps[current].end]
 
 	return (
 		<section className="info" style={{backgroundColor: color}}>

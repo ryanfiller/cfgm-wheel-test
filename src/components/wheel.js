@@ -2,7 +2,7 @@ import React from 'react'
 import Months from './months'
 
 import { paths } from './paths'
-import { dates } from '../data'
+import { dates } from '../dates'
 
 const Group = (props) => { 
 
@@ -62,7 +62,7 @@ const Wheel = (props) => {
                     return (
                         <Group 
                             start={step.start} 
-                            end={index + 1 < steps.length ? steps[index + 1].start : steps[0].start}
+                            end={step.end}
                             color={step.color}
                             key={index}
                             onClick={() => setCurrent(index)}

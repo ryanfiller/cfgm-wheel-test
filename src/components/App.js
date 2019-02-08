@@ -1,35 +1,24 @@
 import React, { useState } from 'react'
 import '../styles/styles.scss'
 
-import { steps } from '../data.js'
-
 import Info from './info'
+import Rotator from './rotator'
 import Wheel from './wheel'
 
-const App = () => {
+const App = (props) => {
+
+	const {
+		steps
+	} = props
 
 	const [current, setCurrent] = useState(0)
 
-	const next = () => {
-		if(current + 1 <= steps.length - 1) {
-			setCurrent(current + 1)
-		} else {
-			setCurrent(0)
-		}
-	}
-
-	const prev = () => {
-		if(current - 1 >= 0) {
-			setCurrent(current - 1)
-		} else {
-			setCurrent(steps.length - 1)
-		}
-	}
-
 	return (
 		<section className="container">
-			<Info steps={steps} current={current} next={next} prev={prev} />
-			<Wheel steps={steps} current={current} setCurrent={setCurrent} />
+			<Info steps={steps} current={current} setCurrent={setCurrent} />
+			<Rotator steps={steps} current={current}>
+				<Wheel steps={steps} current={current} setCurrent={setCurrent} />
+			</Rotator>
 		</section>
 	)
 }
